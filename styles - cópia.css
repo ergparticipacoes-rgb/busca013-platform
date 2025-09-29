@@ -1,0 +1,22 @@
+:root{
+  --violet:#8B5CF6;
+  --bg:#0B1020;
+  --card:rgba(0,0,0,.20);
+  --muted:#B8BBD9;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; margin:0; background: #0f172a; color:#fff;}
+a{color:inherit; text-decoration:none}
+.container{max-width:1080px; margin:0 auto; padding:0 16px;}
+.hero{position:relative; padding:56px 0; background:linear-gradient(180deg, rgba(139,92,246,.34), rgba(139,92,246,.16)), url('https://picsum.photos/seed/hero/1600/600') center/cover}
+.hero .card{background:var(--card); backdrop-filter: blur(10px); border-radius:16px; padding:24px; max-width:680px}
+.h-title{color:var(--violet); font-weight:700; letter-spacing:.5px; margin:0 0 8px}
+.h-sub{color:#EEF; margin:0 0 16px}
+.grid{display:grid; gap:16px}
+.grid.cards{grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); margin:24px 0 40px}
+.card{background:#0b1226; border:1px solid #1f2942; border-radius:16px; padding:16px}
+.input, select, button{padding:12px 14px; border-radius:12px; border:1px solid #2d3b66; background:#0b1226; color:#fff; width:100%}
+button.primary{background: var(--violet); border-color: var(--violet); font-weight:600; cursor:pointer}
+.badge{display:inline-block; padding:4px 8px; border-radius:999px; background:#1f2942; color:#DDE; font-size:12px}
+.price{font-weight:700; font-size:18px}
+footer{padding:32px 0; color:#BFD; border-top:1px solid #1f2942; margin-top:48px}
